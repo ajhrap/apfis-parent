@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.sirfinpa.apfis</groupId>
+    <artifactId>apfis-parent</artifactId>
+    <version>0.1.0</version>
+    <description>apfis-parent</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <java.source.version>1.7</java.source.version>
+        <java.target.version>1.7</java.target.version>
+
+        <org.springframework.version>3.2.9.RELEASE</org.springframework.version>
+        <org.springframework.ws.version>2.2.0.RELEASE</org.springframework.ws.version>
+        <org.springframework.core.version>4.0.5.RELEASE</org.springframework.core.version>
+        <org.springframework.ldap.version>2.0.2.RELEASE</org.springframework.ldap.version>
+
+        <com.fasterxml.jackson.core.jackson-databind.version>2.8.6</com.fasterxml.jackson.core.jackson-databind.version>
+
+        <org.apache.httpclient.version>4.3.1</org.apache.httpclient.version>
+
+        <wsdl4.version>1.6.1</wsdl4.version>
+
+        <log4j.version>1.2.17</log4j.version>
+        <slf4j.version>1.7.21</slf4j.version>
+
+        <net.sf.dozer.version>5.5.1</net.sf.dozer.version>
+
+        <org.postgresql.version>9.4.1209.jre7</org.postgresql.version>
+        <junit.version>4.11</junit.version>
+
+        <javax.mail.version>1.4.7</javax.mail.version>
+
+        <org.apache.maven.maven-compiler-plugin.version>3.2</org.apache.maven.maven-compiler-plugin.version>
+        <org.apache.maven.maven-war-plugin.version>2.4</org.apache.maven.maven-war-plugin.version>
+        <org.apache.maven.maven-jar-plugin.version>3.0.2</org.apache.maven.maven-jar-plugin.version>
+        <org.apache.maven.maven-source-plugin.version>3.0.1</org.apache.maven.maven-source-plugin.version>
+        <org.codehaus.mojo.versions-maven-plugin.version>2.3</org.codehaus.mojo.versions-maven-plugin.version>
+
+        <org.hibernate.hibernate-core.version>3.6.10.Final</org.hibernate.hibernate-core.version>
+        <org.javassist.version>3.18.1-GA</org.javassist.version>
+
+        <com.github.jai-imageio.imageio-core.version>1.3.1</com.github.jai-imageio.imageio-core.version>
+        <com.github.jai-imageio.imageio-jpeg2000.version>1.3.0</com.github.jai-imageio.imageio-jpeg2000.version>
+
+        <!--sirfinpa.apfis.CronPOPClient.version>1.0.2</sirfinpa.apfis.CronPOPClient.version>
+        <sirfinpa.apfis.nist.version>1.8.0</sirfinpa.apfis.nist.version>
+        <sirfinpa.apfis.common>1.1.1</sirfinpa.apfis.common>
+        <sirfinpa.apfis.sca-server-ws-client.version>0.2.0</sirfinpa.apfis.sca-server-ws-client.version>
+        <sirfinpa.apfis.sari-server-ws-client.version>0.1.0</sirfinpa.apfis.sari-server-ws-client.version-->
+
+        <org.jrmtd.wsq-imageio>0.0.2</org.jrmtd.wsq-imageio>
+
+        <org.apache.commons.commons-lang3.version>3.2.1</org.apache.commons.commons-lang3.version>
+
+        <org.freemarker.version>2.3.22</org.freemarker.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>sirfin-release</id>
+            <name>sirfin release</name>
+            <url>http://artifactory.cmit.it/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>sirfin-snapshot</id>
+            <name>sirfin snapshot</name>
+            <url>http://artifactory.cmit.it/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <repositories>
+        <repository>
+            <id>sirfin-release</id>
+            <url>http://artifactory.cmit.it/artifactory/libs-release-local</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>sirfin-snapshot</id>
+            <url>http://artifactory.cmit.it/artifactory/libs-snapshot-local</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>sirfin-ext-release</id>
+            <url>http://artifactory.cmit.it/artifactory/ext-release-local</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
